@@ -36,11 +36,11 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
 
-my_another_action:
-  runs-on: macos-latest
-  steps:
-    -name: checking out.
-    uses: actions/checkout@v2
-     
-    -nane: Run a command
-    run: ls ${{ github.workspace }}
+  my_another_action:
+    runs-on: macos-latest
+    steps:
+    - name: checking out.
+      uses: actions/checkout@v2
+    
+    - name: Run a command
+      run: ls ${{ github.workspace }}
